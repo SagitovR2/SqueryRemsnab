@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="post_edit.html">Форма</a>
+<a href="abduction.html">Увоз</a>
+<a href="applience.html">Приборы</a>
+<a href="bringing.html">Привоз</a>
+<a href="people.html">Люди</a>
+<a href="repair.html">Ремонт</a>
+<a href="type.html">Тип</a>
+<a href="tablet.html">Таблица</a>
+<br>
+{% for i in tip %}
+    <tr><td>{{ i.type }}</td><td>{{ i.comment }}</td></tr>
+{% endfor %}
+</body>
+</html>

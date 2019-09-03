@@ -1,0 +1,28 @@
+.menu a{
+	text-decoration	:none;
+	color			:black;
+	font-family		:simplex;
+	font-size		:30px;
+	padding-top		:15px;
+}
+.menu {
+	width			:250px;
+	float			:left;
+	width			:300px;
+	position		:relative;
+    top     		:2px;
+    left        	:-50px;
+}
+.menu li:hover{
+	background-color:#BDBDBD;
+}
+.menu li:hover a{
+	color			:#FFFFFF;}
+.menu li {
+	background-color:#F2F2F2;
+	list-style-type	:none;
+	margin-left		:50px;
+}
+li {
+    color: #F2F2F2;
+}

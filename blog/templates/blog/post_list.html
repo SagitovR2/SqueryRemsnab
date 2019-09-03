@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remsnab</title>
+</head>
+<body>
+<a href="post_edit.html">Форма</a>
+<a href="abduction.html">Увоз</a>
+<a href="applience.html">Приборы</a>
+<a href="bringing.html">Привоз</a>
+<a href="people.html">Люди</a>
+<a href="repair.html">Ремонт</a>
+<a href="type.html">Тип</a>
+<a href="tablet.html">Таблица</a>
+<a href="table.html">Данные</a>
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="save btn btn-default">Save</input>
+        <input type="submit" class="save btn btn-default">Save</input>
+    </form>
+{% endblock %}
+</body>
+</html>

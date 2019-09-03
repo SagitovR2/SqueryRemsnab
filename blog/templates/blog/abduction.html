@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="post_edit.html">Форма</a>
+<a href="abduction.html">Увоз</a>
+<a href="applience.html">Приборы</a>
+<a href="bringing.html">Привоз</a>
+<a href="people.html">Люди</a>
+<a href="repair.html">Ремонт</a>
+<a href="type.html">Тип</a>
+<a href="tablet.html">Таблица</a>
+<br>
+<table>
+{% for i in uvoz %}
+    <tr><td style="border: 2px solid black">{{ i.date }}</td></tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

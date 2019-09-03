@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+<a href="post_edit.html">Форма</a>
+<a href="abduction.html">Увоз</a>
+<a href="applience.html">Приборы</a>
+<a href="bringing.html">Привоз</a>
+<a href="people.html">Люди</a>
+<a href="repair.html">Ремонт</a>
+<a href="type.html">Тип</a>
+<a href="tablet.html">Таблица</a>
+<a href="table.html">Данные</a>
+<a href="table_type.html">Сортировка по типу</a>
+<table class="table table-light">
+    <thead>
+    <tr><th scope="col">Номер прибора</th><th scope="col">Тип прибора</th><th scope="col">Дата привоза</th></tr>
+    </thead>
+    <tbody>
+    {% for i in pribori %}
+     <tr><td>{{ i.number_of_applience }}</td><td>{{ i.typeofapplience.type }}</td><td>{{ i.bringing.date }}</td></tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
