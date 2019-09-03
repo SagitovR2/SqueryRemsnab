@@ -12,7 +12,7 @@ class UserModelChoiceField(forms.ModelChoiceField):
 class UModelChoiceField(forms.ModelChoiceField):
     def label_from_instance(self, obj):
         return obj.date
-
+'''comment 1'''
 
 class UsModelChoiceField(forms.ModelChoiceField):
     def label_from_instance(self, obj):
